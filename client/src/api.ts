@@ -1,5 +1,6 @@
 import type{ Stats } from "./types";
-const apiUrl = process.env.API_URL;
+
+const apiUrl = process.env.API_URL || "http://localhost:3000";
 
 export async function createGame({
   boardSize,
