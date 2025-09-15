@@ -84,10 +84,12 @@ export const Main = () => {
     setGameResult(null);
   };
 
-  const handleChangeGridSize = (size: number) => {
+const handleChangeGridSize = (size: number) => {
     setBoardSize(size)
-    handleStartNewGame()
-  };
+    setBoard(createEmptyBoard(size))
+    setCurrentPlayer('X')
+    setGameResult(null)
+};
 
   return <div className='flex flex-col mt-10 items-center gap-5'>
     <div className='font-bold text-2xl'>Tic Tac Toe</div>
