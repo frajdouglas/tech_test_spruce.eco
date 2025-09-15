@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const tailwindcss = require('tailwindcss')
 const webpack = require('webpack')
+require('dotenv').config()
 
 module.exports = (env) => ({
   mode: 'development',

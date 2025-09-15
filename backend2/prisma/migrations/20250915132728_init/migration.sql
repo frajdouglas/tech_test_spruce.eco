@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Game" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "boardSize" INTEGER NOT NULL,
+    "playerOneId" INTEGER NOT NULL,
+    "playerTwoId" INTEGER NOT NULL,
+    "winnerId" INTEGER,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

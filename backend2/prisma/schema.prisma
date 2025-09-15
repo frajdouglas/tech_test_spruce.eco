@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Game {
+  id          Int      @id @default(autoincrement())
+  boardSize   Int
+  playerOneId Int
+  playerTwoId Int
+  winnerId    Int?     // null = draw
+  createdAt   DateTime @default(now())
+
+}
