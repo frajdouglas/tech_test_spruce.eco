@@ -128,7 +128,7 @@ export const Main = () => {
     </div>
     {gameResult && (
       <div className='font-bold text-xl'>
-        {gameResult === 'draw' ? "It's a Draw!" : `Player ${gameResult} Wins!`}
+        {gameResult === 'draw' ? "It's a Draw!" : `${gameResult} Wins!`}
       </div>
     )}
     <div className="mt-6 w-full max-w-md mb-5">
