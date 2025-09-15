@@ -24,4 +24,4 @@ app.post('/api/game', async (req, res) => {
   res.status(201).json({ id });
 });
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`));
